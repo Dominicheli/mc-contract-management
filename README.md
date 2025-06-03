@@ -45,7 +45,7 @@ src/
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/seu-usuario/contract-management.git
+git clone https://github.com/Dominicheli/mc-contract-management
 
 # 2. Acesse a pasta do projeto
 cd contract-management
