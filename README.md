@@ -16,19 +16,20 @@ Aplicação web para gerenciamento de contratos, ativos e fornecedores, desenvol
 
 ## 📁 Estrutura de Pastas
 
+
 src/
-├── assets/ # Imagens, ícones e arquivos estáticos
-├── components/ # Componentes reutilizáveis (Header)
-├── context/ # Contextos globais de estado (ex: Temas)
-├── layouts/ # Layouts compartilhados (ex: estrutura de páginas)
-├── pages/ # Páginas principais da aplicação
-│ ├── assets/ # Cadastro e listagem de ativos
-│ ├── salesContract/ # Gerenciamento de contratos de venda
-│ ├── suppliers/ # Cadastro e listagem de fornecedores
-│ └── typeAssets/ # Cadastro e listagem Tipos de ativos
-├── routes/ # Definição e configuração das rotas (React Router)
-├── services/ # Comunicação com a API usando Axios
-└── App.tsx # Componente principal da aplicação
+├── assets/                 # Imagens, ícones e arquivos estáticos
+├── components/            # Componentes reutilizáveis (ex: Header)
+├── context/               # Contextos globais de estado (ex: Temas)
+├── layouts/               # Layouts compartilhados (ex: estrutura de páginas)
+├── pages/                 # Páginas principais da aplicação
+│   ├── assets/            # Cadastro e listagem de ativos
+│   ├── salesContract/     # Gerenciamento de contratos de venda
+│   ├── suppliers/         # Cadastro e listagem de fornecedores
+│   └── typeAssets/        # Cadastro e listagem de tipos de ativos
+├── routes/                # Definição e configuração das rotas (React Router)
+├── services/              # Comunicação com a API usando Axios
+└── App.tsx                # Componente principal da aplicação
 
 ---
 
