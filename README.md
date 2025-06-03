@@ -16,7 +16,7 @@ Aplicação web para gerenciamento de contratos, ativos e fornecedores, desenvol
 
 ## 📁 Estrutura de Pastas
 
-
+```markdown
 src/
 ├── assets/                 # Imagens, ícones e arquivos estáticos
 ├── components/            # Componentes reutilizáveis (ex: Header)
@@ -30,6 +30,7 @@ src/
 ├── routes/                # Definição e configuração das rotas (React Router)
 ├── services/              # Comunicação com a API usando Axios
 └── App.tsx                # Componente principal da aplicação
+```
 
 ---
 
