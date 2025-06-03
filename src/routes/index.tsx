@@ -19,19 +19,22 @@ export default function AppRoutes() {
           <Route path="/fornecedores" element={<SupplierList />} />
           <Route path="/fornecedores/novo" element={<SupplierForm />} />
           <Route path="/fornecedores/editar/:id" element={<SupplierForm />} />
-          <Route path="/tipo_ativo" element={<TypeAssetsList />} />
-          <Route path="/tipo_ativo/novo" element={<TypeAssetsForm />} />
-          <Route path="/tipo_ativo/editar/:id" element={<TypeAssetsForm />} />
+          <Route path="/tipo-de-ativo" element={<TypeAssetsList />} />
+          <Route path="/tipo-de-ativo/novo" element={<TypeAssetsForm />} />
+          <Route
+            path="/tipo-de-ativo/editar/:id"
+            element={<TypeAssetsForm />}
+          />
           <Route path="/ativo" element={<AssetsList />} />
           <Route path="/ativo/novo" element={<AssetsForm />} />
           <Route path="/ativo/editar/:id" element={<AssetsForm />} />
-          <Route path="/contrato_de_venda" element={<SalesContractList />} />
+          <Route path="/contrato-de-venda" element={<SalesContractList />} />
           <Route
-            path="/contrato_de_venda/novo"
+            path="/contrato-de-venda/novo"
             element={<SalesContractForm />}
           />
           <Route
-            path="/contrato_de_venda/editar/:id"
+            path="/contrato-de-venda/editar/:id"
             element={<SalesContractForm />}
           />
         </Route>

@@ -135,7 +135,7 @@ export default function SalesContractList() {
         <h1>Contrato de Venda</h1>
         <Button
           type="primary"
-          onClick={() => navigate("/contrato_de_venda/novo")}
+          onClick={() => navigate("/contrato-de-venda/novo")}
         >
           Novo Contrato de Venda
         </Button>

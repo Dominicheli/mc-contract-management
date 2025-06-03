@@ -17,9 +17,9 @@ export default function SalesContractForm() {
     try {
       const response = await api.get("/fornecedores");
 
-      const options = response.data.map((fornecedor: any) => ({
-        label: fornecedor.Descricao,
-        value: fornecedor.id,
+      const options = response.data.map((suppliers: any) => ({
+        label: suppliers.Descricao,
+        value: suppliers.id,
       }));
 
       setSuppliers(options);
@@ -31,9 +31,15 @@ export default function SalesContractForm() {
   const fetchAssets = async () => {
     try {
       const response = await api.get("/ativo");
-      setAssets(response.data);
+
+      const options = response.data.map((assets: any) => ({
+        label: assets.Descricao,
+        value: assets.id,
+      }));
+
+      setAssets(options);
     } catch (error) {
-      message.error("Erro ao buscar ativos.");
+      message.error("Erro ao buscar ativo.");
     }
   };
 
@@ -82,7 +88,7 @@ export default function SalesContractForm() {
         await api.post(`/contrato_de_venda`, payload);
         message.success("Contrato criado com sucesso!");
       }
-      navigate("/contrato_de_venda");
+      navigate("/contrato-de-venda");
     } catch (error) {
       message.error("Erro ao salvar contrato.");
     }
@@ -265,7 +271,7 @@ export default function SalesContractForm() {
         </Button>
         <Button
           style={{ marginLeft: 8 }}
-          onClick={() => navigate("/contrato_de_venda")}
+          onClick={() => navigate("/contrato-de-venda")}
         >
           Cancelar
         </Button>

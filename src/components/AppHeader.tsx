@@ -9,9 +9,9 @@ const { Header } = Layout;
 
 const routes = [
   { path: "/fornecedores", label: "Fornecedores" },
-  { path: "/tipo_ativo", label: "Tipo de Ativo" },
+  { path: "/tipo-de-ativo", label: "Tipo de Ativo" },
   { path: "/ativo", label: "Ativo" },
-  { path: "/contrato_de_venda", label: "Contrato de Venda" },
+  { path: "/contrato-de-venda", label: "Contrato de Venda" },
 ];
 
 export default function AppHeader() {

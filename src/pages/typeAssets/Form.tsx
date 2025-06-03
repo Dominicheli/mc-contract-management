@@ -42,7 +42,7 @@ export default function TypeAssetsForm() {
         await api.post(`/tipo_ativo`, values);
         message.success("Tipo de Ativo criado com sucesso!");
       }
-      navigate("/tipo_ativo");
+      navigate("/tipo-de-ativo");
     } catch (error) {
       message.error("Erro ao salvar Tipo de Ativo.");
     }
@@ -93,7 +93,7 @@ export default function TypeAssetsForm() {
         </Button>
         <Button
           style={{ marginLeft: 8 }}
-          onClick={() => navigate("/tipo_ativo")}
+          onClick={() => navigate("/tipo-de-ativo")}
         >
           Cancelar
         </Button>

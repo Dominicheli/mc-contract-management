@@ -101,7 +101,7 @@ export default function TypeAssetsList() {
         }}
       >
         <h1>Tipo de Ativo</h1>
-        <Button type="primary" onClick={() => navigate("/tipo_ativo/novo")}>
+        <Button type="primary" onClick={() => navigate("/tipo-de-ativo/novo")}>
           Novo Tipo de Ativo
         </Button>
       </div>
